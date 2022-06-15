@@ -87,9 +87,9 @@ a:hover {
 
 /* Popup container */
 .popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
 /* The actual popup (appears on top) */
