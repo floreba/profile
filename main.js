@@ -1,17 +1,32 @@
-var coll = document.getElementsByClassName("collapsible");
-var i;
-console.log(coll)
+function hide() {
+  x = document.getElementById('carou');
+  btnShow = document.getElementById('button-show');
+  btnHide = document.getElementById('button-hide');
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", () =>  {
-    console.log("Test");
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
+  x.className = 'hide';
+  btnShow.className = 'show button';
+  btnHide.className = 'hide button';
+
 }
-console.log(coll + "2")
+
+function show() {
+  x = document.getElementById('carou');
+  btnHide = document.getElementById('button-hide');
+  btnShow = document.getElementById('button-show');
+
+  x.className = 'show';
+  btnHide.className = 'show button';
+  btnShow.className = 'hide button';
+}
+
+
+let scroller = document.getElementById("scroller")
+scroller.addEventListener("scroll", function () {
+            // const scrollerWrapper = document.getElementById("scroller");
+            // // scrollPercent =
+            // //   (scrollerWrapper.scrollLeft /
+            // //     (scrollerWrapper.scrollWidth - scrollerWrapper.clientWidth)) *
+            // //   100;
+            // // document.getElementById("scroll-progress").style.width =
+            // //   scrollPercent + "%";
+          });

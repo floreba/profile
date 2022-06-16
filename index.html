@@ -25,36 +25,41 @@
   <div class="container">
     <h2>Here are some projects I have been working on:</h2>
 
-    <div class="container-article">
+    <div id="scroller">
+      <!-- articels -->
 
-      <a href="www.spotaloo.lol">
-        <h3><img src="/images/spotaloo/spotaloo_logo.png" alt="spotaloo logo"></h3>
-      </a>
+      <!-- article start -->
 
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="/images/spotaloo/spotaloo_demo1.png" class="d-block w-100" alt="...">
+      <li class="container-article">
+
+
+        <h3>Toilet Finder</h3>
+        <div id="carou" class="hide">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/spotaloo/spotaloo_demo1.png"  alt="spotaloo demo">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/spotaloo/spotaloo_demo2.png"  alt="spotaloo demo">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/spotaloo/spotaloo_demo3.png"  alt="spotaloo demo">
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="/images/spotaloo/spotaloo_demo2.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="/images/spotaloo/spotaloo_demo3.png" class="d-block w-100" alt="...">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
 
         <div class="article">
-          This has been a group project in the LeWagon course I took.
+          <a href="https://www.spotaloo.lol" target="_blank"> Spotaloo </a> has been a group project in the LeWagon course I took.
           You can checkout the <a href="https://github.com/ran1000/rate_your_toilet"> Github Repo.</a>
           It lets you rate toilets you've been at, how great is that?
           George Costanza would've loved that website.
@@ -62,15 +67,64 @@
           <br>
           However, in order for it to work properly, you have to sign up.
           You can sign up with a made up mail like "max@mail.com" & a "non safe" passsword like 123456
+          <br>
+          <br>
           We designed it with "mobile first" in mind, on a full screen it might look silly in certain areas.
-          <br>
-          <br>
           So far, the only toilets there are, are located in Berlin, Mitte.
           You of course can upload some in your area if you'd like.
         </div>
-      </div>
+        <div class="button-container">
+          <button  id="button-hide" class="hide button" onclick="hide()">Hide Pictures</button>
+          <button  id="button-show" class="show button" onclick="show()">Show Pictures</button>
+        </div>
+      </li>
+
+      <!-- Article end -->
+
+      <li class="container-article">
+
+        <a href="www.spotaloo.lol">
+          <div class="spotaloo">
+
+              <h3>Coming Soon...</h3>
+
+          </div>
+        </a>
+        <div class="article">
+          Are you excited? I certainly am.
+        </div>
+      </li>
+
+      <!-- Article end -->
+
+      <li class="container-article">
+
+        <a href="www.spotaloo.lol">
+          <div class="spotaloo">
+
+              <h3>Coming Soon...</h3>
+
+          </div>
+        </a>
+        <div class="article">
+          Are you excited? I certainly am.
+        </div>
+      </li>
+      <!-- Article end -->
+      <!-- Articles end -->
+
+    </div>
+
+
+
+
+
+
   </div>
 
+
+
+  <!-- Footer -->
   <div class="container">
     <h2>Get in contact with me here:</h2>
     <ul class="list-inline">
@@ -87,10 +141,9 @@
     </ul>
   </div>
 
-  <button type="button" class="collapsible">Open Collapsible</button>
-  <div class="content">
-    <p>Lorem ipsum...</p>
-  </div>
+
+
+
 
 
 </body>

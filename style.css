@@ -1,13 +1,11 @@
-
-
 h1 {
   font: 500;
   font-family: 'Josefin Sans', sans-serif;
 }
 
 h2 {
+  font-family: 'Josefin Sans', sans-serif;;
   font: 350;
-  color: black;
 }
 
 h3 {
@@ -15,12 +13,10 @@ h3 {
   font: 300;
   text-decoration: none;
   font-family:'Josefin Sans', sans-serif;
-  color: white;
-  background-color: black;
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', sans-serif !important;
   background-color: rgb(255, 255, 255);
 }
 
@@ -40,11 +36,6 @@ p {
 a {
   color: deeppink !important;
   text-decoration: none !important;
-}
-
-a:hover h3 {
-  color:rgb(255, 255, 255) !important;
-  background-color: deeppink !important;
 }
 
 a:hover {
@@ -71,42 +62,106 @@ a:hover {
 .container-article {
   text-align: center;
   background-color: white;
-  border-radius: 10px;
   border: 10px;
   box-shadow: 10px;
-  width: 500px;
+  min-width: 400px;
   margin: 10px auto;
-  border: 1px solid lightgrey;
-
+  /* border: 1px solid lightgrey; */
 }
 
 .article {
   text-align: left !important;
-  border: 1px solid lightgrey;
+  padding: 10px;
+  flex-direction: column;
+  white-space: initial;
+  /* border: 1px solid lightgrey; */
 }
 
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+#carou {
+  height: 2rem;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #ccc;
-}
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
+.hide {
   display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
+}
+
+.show {
+  display: block;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  border-style: solid;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  border-color: black;
+}
+
+.button:hover {
+  color: deeppink;
+  font-size: 103%;
+  /* border-style: groove; */
+}
+
+
+
+.button-container {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  padding-top: 5px;
+}
+
+
+.spotaloo {
+  color: white;
+  background-color: #0033ff;
+  margin: 10px;
+  padding: 10px;
+}
+
+#scroller {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #scroller li {
+    display: inline-block;
+    margin: 10px;
+    min-width: fit-content;
+  }
+}
+
+#scroller li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  filter: invert(100%);
+ }
+
+ .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+   filter: invert(100%);
+ }
+
+#carou img {
+  object-fit: scale-down;
+  max-height: 375px;
+  display: inline-block;
+}
+
+.carousel-item {
+  background-color: rgba(0, 0, 0, 0.5);
 }
