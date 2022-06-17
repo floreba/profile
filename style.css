@@ -6,12 +6,13 @@ h1 {
 h2 {
   font-family: 'Josefin Sans', sans-serif;;
   font: 350;
+  padding: 1rem;
 }
 
 h3 {
   font-family: 'Josefin Sans', sans-serif;
   font: 300;
-  text-decoration: none;
+  text-decoration: underline;
   font-family:'Josefin Sans', sans-serif;
 }
 
@@ -20,7 +21,13 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-
+.bgro {
+  background:
+    linear-gradient(to bottom, rgb(105, 105, 105) 70%, white 30%);
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 5px  deeppink;
+}
 
 p {
   font: 300;
@@ -47,6 +54,8 @@ a:hover {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  box-shadow: 1px deeppink;
+  outline-style: solid;
 }
 
 .container {
@@ -56,7 +65,7 @@ a:hover {
   border: 10px;
   box-shadow: 10px;
   width: 500px;
-  margin: 10px auto;
+  padding: 10px auto;
 }
 
 .container-article {
@@ -65,7 +74,7 @@ a:hover {
   border: 10px;
   box-shadow: 10px;
   min-width: 400px;
-  margin: 10px auto;
+  padding: 10px auto;
   /* border: 1px solid lightgrey; */
 }
 
@@ -91,18 +100,19 @@ a:hover {
 
 .button {
   background-color: white;
-  color: black;
+  color: rgb(105, 105, 105);
   border-style: solid;
   width: 150px;
-  height: 50px;
+  height: 35px;
   border-radius: 20px;
-  border-color: black;
+  border-color: rgb(105, 105, 105);
 }
 
 .button:hover {
+  /* background-color: lightgray; */
+  transform:scale(1.1,1.1);
+  /* box-shadow: 0 0 5px deeppink; */
   color: deeppink;
-  font-size: 103%;
-  /* border-style: groove; */
 }
 
 
@@ -110,9 +120,8 @@ a:hover {
 .button-container {
   justify-content: center;
   display: flex;
-  margin-bottom: 5px;
-  margin-top: 15px;
-  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-top: 10px;
 }
 
 
@@ -130,7 +139,7 @@ a:hover {
   overflow: auto;
   white-space: nowrap;
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 
 @media only screen and (max-width: 600px) {
