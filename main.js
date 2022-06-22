@@ -1,8 +1,8 @@
-x = document.getElementById('carou');
-btnShow = document.getElementById('button-show');
-btnHide = document.getElementById('button-hide');
 
 function hide() {
+  x = document.getElementById('carou');
+  btnShow = document.getElementById('button-show');
+  btnHide = document.getElementById('button-hide');
   x.className = 'hide';
   btnShow.className = 'show button';
   btnHide.className = 'hide button';
@@ -10,6 +10,9 @@ function hide() {
 }
 
 function show() {
+  x = document.getElementById('carou');
+  btnShow = document.getElementById('button-show');
+  btnHide = document.getElementById('button-hide');
   x.className = 'show';
   btnHide.className = 'show button';
   btnShow.className = 'hide button';
