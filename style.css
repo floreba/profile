@@ -12,6 +12,10 @@ h2 {
 h3 {
   font-family: 'IBM Plex Mono', monospace;
   font: 300;
+<<<<<<< HEAD
+=======
+  text-decoration: underline;
+>>>>>>> 9c8859fc56ab413980c9f5c734fa88d9644b4575
 }
 
 body {
