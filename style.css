@@ -1,3 +1,6 @@
+footer {
+  min-height: 10vh;
+}
 
 footer a {
   border-style: none !important;
@@ -44,6 +47,8 @@ body {
   background-image: url('./images/coding_pink.png') !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+  min-height: 100vh;
+
 }
 
 p {
