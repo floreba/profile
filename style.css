@@ -5,6 +5,12 @@ html {
 
 footer a {
   border-style: none !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+footer a:hover {
+  border-style: none !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 h1 {
