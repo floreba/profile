@@ -9,7 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="main.js"></script>
@@ -17,17 +20,8 @@
   <title>floreba</title>
 </head>
 <body>
-  <div class="bgro">
-    <!-- <div class=""> -->
-      <br>
-      <br>
-      <br>
-      <img class="img-circle" src="images/profile_picture.jpeg" alt="face">
-    <!-- </div> -->
-  </div>
-
   <div class="container">
-    <h2>Projects:</h2>
+    <h1>Projects:</h1>
 
     <div id="scroller">
       <!-- articels -->
@@ -62,19 +56,14 @@
           </div>
         </div>
 
-        <div class="article border-top">
-          <p><a href="https://www.spotaloo.lol" target="_blank"> Spotaloo </a> has been a group project in the LeWagon course I took.
-          You can checkout the <a href="https://github.com/ran1000/rate_your_toilet"> Github Repo.</a>
+        <div class="article">
+          <p><a href="https://www.spotaloo.lol" target="_blank"> Spotaloo</a> has been a group project in the LeWagon course I took.
+          You can checkout the <a href="https://github.com/ran1000/rate_your_toilet"> Github Repo</a>.
           It lets you find, rate & add toilets of your choice in your area. George Costanza would've loved that website.
           </p>
           <p>
-          Although it's been a "fun" project I definitely learned a lot during the project.
-          Shoutout to my all-italian speaking teammates Ricardo, Andrea & Sebastian with whom I had the pleasure of working with.
-
-        </p>
-        <p>
-          Status: ✖️ No longer maintained
-        </p>
+            Status: No longer maintained
+          </p>
         </div>
         <div class="button-container">
           <button  id="button-hide" class="hide button" onclick="hide()">Hide Pictures</button>
@@ -86,13 +75,13 @@
 
       <li class="container-article">
 
-        <h3>niPedia</h3>
-        <div class="article border-top">
-          <p> <a href="https://still-chamber-69573.herokuapp.com/" target="_blank"> niPedia</a> is a collaboration of <a href="https://github.com/kavi-codes" target="_blank">kavi-codes</a>
-            & my persona. This desktop app lets you organize your knowledge by associations.
+        <h3>Note Organizer</h3>
+        <div class="article">
+          <p> <a href="https://still-chamber-69573.herokuapp.com/" target="_blank"> niPedia</a> is a project from <a href="https://github.com/kavi-codes" target="_blank">kavi-codes</a>
+            & me. This desktop app lets you organize your knowledge by associations.
             It does that by letting you link notes with each other.
           </p>
-            Organizing your thoughts never felt easier!
+            Status: No longer maintained
           </p>
           <p>
             Status: ✖️ No longer maintained
@@ -107,9 +96,16 @@
 
       <li class="container-article">
 
-        <h3>Coming soon</h3>
-        <div class="article border-top">
-          Are you excited about the upcoming content? I certainly am.
+        <h3>Pong</h3>
+        <div class="article">
+          <p>
+            I tried to test Chat-GPT and its capabilities to design a game as fast as possible.
+            It is astonishing how far & how fast you can get by just prompting and injecting code.
+            Total development time: 25 mins
+          </p>
+          <div class="button-container">
+            <button onclick="openPopup()" class="show button"> Play </button>
+          </div>
         </div>
       </li>
       <!-- Article end -->
@@ -117,32 +113,33 @@
       <!-- Articles end -->
 
     </div>
-
-
-
-
-
-
   </div>
 
 
 
   <!-- Footer -->
-  <div class="container">
-    <h2>Get in contact with me here:</h2>
-    <ul class="list-inline">
-      <li>
-        <a href="https://www.linkedin.com/in/florian-b-857836183/" target="_blank">
-          <i class="fab fa-linkedin-in"></i>
-          </a>
-      </li>
-      <li>
-        <a href="https://github.com/floreba" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
+  <footer>
+    <div class="container banner">
+      <h2>Contact:</h2>
+      <ul class="list-inline">
+        <li>
+          <h3>
 
+              <a href="https://www.linkedin.com/in/florian-b-857836183/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+          </h3>
+        </li>
+        <li>
+          <h3>
+            <a href="https://github.com/floreba" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </h3>
+        </li>
+      </ul>
+    </div>
+</footer>
 </body>
 </html>

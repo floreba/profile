@@ -18,17 +18,11 @@ function show() {
   btnShow.className = 'hide button';
 }
 
+function openPopup() {
+  var width = 620;
+  var height = 425;
+  var left = (screen.width/2)-(width/2);
+  var top = (screen.height/2)-(height/2);
+  window.open("pong.html", "Popup", "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+}
 console.log(location);
-
-// let scroller = document.getElementById("scroller")
-// scroller.addEventListener("scroll", function () {
-//             // const scrollerWrapper = document.getElementById("scroller");
-//             // // scrollPercent =
-//             // //   (scrollerWrapper.scrollLeft /
-//             // //     (scrollerWrapper.scrollWidth - scrollerWrapper.clientWidth)) *
-//             // //   100;
-//             // // document.getElementById("scroll-progress").style.width =
-//             // //   scrollPercent + "%";
-//           });
-
-// lwindow.location;
