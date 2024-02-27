@@ -20,8 +20,19 @@
   <title>floreba</title>
 </head>
 <body>
+  <script>function startAnimation(element) {
+    element.classList.add('fly');
+  }
+  </script>
+  <div class="rocket" onclick="startAnimation(this)">🚀</div>
+
   <div class="container">
-    <h1>Projects:</h1>
+    <h1>Projects</h1>
+    <div>--Swipe Right--</div>
+    <br>
+    <br>
+    <br>
+
 
     <div id="scroller">
       <!-- articels -->
@@ -57,12 +68,10 @@
         </div>
 
         <div class="article">
-          <p><a href="https://www.spotaloo.lol" target="_blank"> Spotaloo</a> has been a group project in the LeWagon course I took.
+          <k> June 2022</k><p>
+            <a href="https://www.spotaloo.lol" target="_blank"> Spotaloo</a> has been a group project in the LeWagon course I took.
           You can checkout the <a href="https://github.com/ran1000/rate_your_toilet"> Github Repo</a>.
           It lets you find, rate & add toilets of your choice in your area. George Costanza would've loved that website.
-          </p>
-          <p>
-            Status: No longer maintained
           </p>
         </div>
         <div class="button-container">
@@ -77,12 +86,11 @@
 
         <h3>Note Organizer</h3>
         <div class="article">
-          <p> <a href="https://still-chamber-69573.herokuapp.com/" target="_blank"> niPedia</a> is a project from <a href="https://github.com/kavi-codes" target="_blank">kavi-codes</a>
+          <k> August 2022</k>
+          <p>
+            <a href="https://still-chamber-69573.herokuapp.com/" target="_blank"> niPedia</a> is a project from <a href="https://github.com/kavi-codes" target="_blank">kavi-codes</a>
             & me. This desktop app lets you organize your knowledge by associations.
             It does that by letting you link notes with each other.
-          </p>
-            Status: No longer maintained
-          </p>
         </div>
         <div class="button-container">
           <button class="button" onclick="window.open('https://github.com/floreba/niPedia')"> Repository </button>
@@ -95,48 +103,38 @@
 
         <h3>Pong</h3>
         <div class="article">
+          <k> April 2023</k>
           <p>
             I tested Chat-GPT and its capabilities to design a game in the shortest amount of time.
             It is astonishing how far & how fast you can get by just prompting and injecting code.
             Total development time: 25 mins
           </p>
-          <p>
-            Status: Completed
-          </p>
+
           <div class="button-container">
             <button onclick="openPopup()" class="show button"> Play </button>
           </div>
         </div>
       </li>
       <!-- Article end -->
+      <li class="container-article">
+
+        <h3>Upcoming</h3>
+        <div class="article">
+          <k> March 2024</k>
+          <p>
+            ...
+          </p>
+
+          <!-- <div class="button-container">
+            <button onclick="openPopup()" class="show button"> Play </button>
+          </div> -->
+        </div>
+      </li>
 
       <!-- Articles end -->
 
     </div>
   </div>
   <!-- Footer -->
-  <footer>
-    <div class="container banner">
-      <h2>Contact:</h2>
-      <ul class="list-inline">
-        <li>
-          <h3>
-
-              <a href="https://www.linkedin.com/in/florian-b-857836183/" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-
-          </h3>
-        </li>
-        <li>
-          <h3>
-            <a href="https://github.com/floreba" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </h3>
-        </li>
-      </ul>
-    </div>
-</footer>
 </body>
 </html>
