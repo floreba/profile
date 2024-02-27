@@ -25,4 +25,4 @@ function openPopup() {
   var top = (screen.height/2)-(height/2);
   window.open("pong.html", "Popup", "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
 }
-console.log(location);
+
